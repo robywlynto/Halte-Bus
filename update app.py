@@ -204,7 +204,7 @@ elif menu.startswith("4"):
     else:
         with st.form("form_bus_datang"):
             nama_halte = st.selectbox("Nama halte", list(antrian_halte.keys()))
-            kapasitas = st.number_input("Kapasitas bus", min_value=1, step=1, value=1)
+            kapasitas = st.number_input("Kapasitas penumpang", min_value=1, step=1, value=1)
             submit = st.form_submit_button("Bus Datang")
         if submit:
             bus_datang(nama_halte, int(kapasitas))
