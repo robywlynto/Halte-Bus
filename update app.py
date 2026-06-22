@@ -279,20 +279,6 @@ elif menu.startswith("9"):
         else:
             st.info(f"Jadwal {nama_rute}: tidak ada lagi")
 
-# ---------- 10. Bus Berangkat ----------
-elif menu.startswith("10"):
-    st.subheader("🚌 Bus Berangkat (Sesuai Jadwal)")
-    if not jadwal_rute:
-        st.warning("Belum ada rute.")
-    else:
-        with st.form("form_bus_berangkat"):
-            nama_rute = st.selectbox("Nama rute", list(jadwal_rute.keys()))
-            submit = st.form_submit_button("Berangkatkan Bus")
-        if submit:
-            bus_berangkat(nama_rute)
-
-st.divider()
-
 # ===== LOG / OUTPUT (pengganti print di CLI) =====
 st.subheader("📝 Riwayat Pesan")
 if not st.session_state.pesan:
