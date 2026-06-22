@@ -158,7 +158,6 @@ menu = st.sidebar.radio(
         "7. Tampilkan Satu Rute",
         "8. Tampilkan Semua Rute",
         "9. Tampilkan Jadwal Rute",
-        "10. Bus Berangkat (sesuai jadwal)",
     ]
 )
 
